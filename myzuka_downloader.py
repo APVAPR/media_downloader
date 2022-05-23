@@ -2,8 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import os
 
-url = input('Insert url:')
-
 
 def get_url(url):
     response = requests.get(url)
@@ -31,5 +29,6 @@ def download(link, track):
 
 
 if __name__ == '__main__':
+    url = input('Insert url:')
     get_url(url)
 
